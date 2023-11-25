@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project3</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+
+<!-- start navbar ---------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ps-2">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="#">
+           <img src="images/logo.png" alt="logo" class="mb-2" style="width: 80px;"></a>
+
+          <a class="navbar-brand2 border-end px-2 fs-4 fw-bold text-decoration-none" href="#">
+            water<span class="word"> sports</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#"><span>h</span>ome</a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><span>t</span>ools</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>c</span>ourses
+                </a>
+                <ul class="dropdown-menu  bg-light bg-opacity-50 border border-1 border-primary-subtle">
+                  <li><a class="dropdown-item" href="#">sailing</a></li>
+                  <li><a class="dropdown-item" href="#">jetski</a></li>
+                  <li><hr class="dropdown-divider border border-1 border-primary-subtle"></li>
+                  <li><a class="dropdown-item" href="#">Diving</a></li>
+                  <li><a class="dropdown-item" href="#">summing</a></li>
+                  <li><a class="dropdown-item" href="#">others....</a></li>
+                </ul><!-- /dropdown-menu -->
+              </li><!-- /nav-item dropdown -->
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#">about us</a></li>
+            </ul><!--/navbar-nav-->
+ 
+            <form class="d-flex" role="search">
+              <input class="form-control border border-1 border-primary-subtle" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn mx-2" type="submit">Search</button>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                login
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header bg-info">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">login</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label text-info">Email address</label>
+                          <input type="email" class="form-control border border-info" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label text-info">Password</label>
+                          <input type="password" class="form-control border border-info" id="exampleInputPassword1">
+                        </div>
+                
+                        <div class="form-check form-switch">
+                          <input class="form-check-input bg-info" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label text-info" for="flexSwitchCheckChecked">Remember me</label>
+                        </div>
+                      </form> 
+                    </div><!-- /modal-body -->
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info  me-auto" data-bs-dismiss="modal">login</button>
+                      <button type="button" class="btn btn-info">cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </form><!-- /d-flex -->
+          </div><!-- /collapse  -->
+          
+        </div><!-- /container-fluid -->
+      </nav><!-- /navbar -->
+<!-- start-section1 ----------------------------------------------------------------------------------->
+    <section class="section-show">
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active  position-relative" data-bs-interval="10000">
+            <img src="images/145 (1).jpg" class="d-block w-100" alt="sailing" height="540px">
+            <div class="carousel-caption d-md-block text-dark bg-white bg-opacity-25">
+              <h2>Sailing</h2>
+              <p>Orange Bay Island Snorkeling Trip With Water Sports From Hurghada</p>
+              <button type="button" class="btn text-dark">Save changes</button>
+            </div>
+          </div>
+          <div class="carousel-item"  data-bs-interval="2000">
+            <img src="images/wallpaperflare.com_wallpaper (10).jpg" class="d-block w-100" alt="diving" height="540px">
+            <div class="carousel-caption d-md-block text-dark bg-white bg-opacity-25">
+              <h2>Diving</h2>
+              <p>These are the best places for adventurous scuba & snorkeling in Sharm El Sheikh</p>
+              <button type="button" class="btn text-dark">Save changes</button>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="images/wallpaperflare.com_wallpaper.jpg" class="d-block w-100" alt="jetski" height="540px">
+            <div class="carousel-caption d-md-block text-dark bg-white bg-opacity-25">
+              <h2>Jetski</h2>
+              <p>These experiences are best for waterskiing & jetskiing in Dubai</p>
+              <button type="button" class="btn text-dark">Save changes</button>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/nil-castellvi-8wwwDJvehKk-unsplash.jpg" class="d-block w-100" alt="Kayaking" height="540px">
+            <div class="carousel-caption d-md-block text-dark bg-white bg-opacity-25">
+              <h2>Kayaking</h2>
+              <p>Cairo Kayak on The Nile River </p>
+              <button type="button" class="btn text-dark">Save changes</button>
+            </div>
+          </div>
+
+        </div><!-- /carousel-inner -->
+      </div><!-- /carouselExampleInterval -->
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <ul class="icons list-unstyled">
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-whatsapp-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    
+      <div class="modal-title3 bg-primary-subtle p-4 border border-1 border-info shadow">
+        <h2 class="welcome">welcome</h2>
+        <p class="p-welcome" >We are a charter service that offers many fun activities for you to do behind the boat, no matter your age!!</p>
+        <button class="btn bordered border-info fs-5">learn more</button>
+      </div>
+      <hr>
+    </section>
+
+      <!-- start-section 2------------------------------------------------------------------------------------>
+      <div class="modal-title1 p-5 text-center my-3 shadow">
+        <h2>our courses</h2>
+      </div>
+
+      <div class="accordion accordion-flush shadow" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-4 shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+             Adult courses
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sed numquam veritatis quis commodi consequatur tempore corporis tempora excepturi? Eveniet, nam. Minus, sed dolores reiciendis aliquid praesentium vitae non perspiciatis?</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-4 shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            kids courses
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at accusantium id? Harum accusamus iusto voluptatibus ipsa aperiam velit tempore deserunt aliquid molestias obcaecati reprehenderit reiciendis quo adipisci, veritatis quia!
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-4 shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+             Fun Activities 
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">We have more than a watersport activity. Rowing, Kayaking, SUP and Dragon boat. We give classes for beginners, intermediate or advanced level.
+              For Beginner's we have the coaches giving the instructions and then there is a coach accompanying the ride in the water.</div>
+          </div>
+        </div>
+      </div>
+      <hr> 
+<!--start-section3 ------------------------------------------------------------------------------------------------------------------->
+<div class="modal-title text-center p-3 rounded">
+  <h2>login form</h2>
+</div>
+
+<form class="row g-3 border border-1 border-primary-subtle bg-primary-subtle p-3 shadow">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control border-1 border-primary-subtle" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control border-1 border-primary-subtle" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control border-1 border-primary-subtle" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control border-1 border-primary-subtle" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select border-1 border-primary-subtle">
+      <option selected>Choose...</option>
+      <option>Sharm ALshikh</option>
+      <option>Dahab</option>
+      <option>Hurghada</option>
+      <option>Dubai</option>
+    </select>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input border-1 border-primary-subtle" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="button" class="btn border-1 border-primary-subtle"  data-bs-toggle="modal" data-bs-target="#exampleModal2" 
+    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">Sign in</button>
+  </div>
+  <!-- Modal -->
+<div class="modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>welcome to watersports academy </p>
+        <p class="text-end fs-4">تم التسجيل</p>
+        <p type="button" class="btn border-2 border-primary-subtle bg-primary-subtle py-2 px-3 pl-auto" data-bs-dismiss="modal">ok</p>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+<!--form2 //////// -->
+<hr>
+<div class="modal-title text-center p-4 rounded">
+  <h2>submit courses</h2>
+</div>
+<form class="row row-cols-lg-auto g-4 align-items-center border border-1 border-primary-subtle bg-primary-subtle shadow p-3 mb-4">
+  <div class="col-lg-4">
+    <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+    <div class="input-group">
+      <div class="input-group-text border-1 border-primary-subtle">@</div>
+      <input type="text" class="form-control border-1 border-primary-subtle" id="inlineFormInputGroupUsername" placeholder="Username">
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+    <select class="form-select border-1 border-primary-subtle" id="inlineFormSelectPref">
+      <option hidden>Courses Catogery</option>
+      <option value="1">kids</option>
+      <option value="2">Adults</option>
+      <option value="3">Fun Activities</option>
+    </select>
+  </div>
+
+  <div class="col-lg-4">
+    <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+    <select class="form-select border-1 border-primary-subtle" id="inlineFormSelectPref">
+      <option hidden>Courses Types</option>
+      <option value="1">Diving</option>
+      <option value="2">Summing</option>
+      <option value="3">Rafting</option>
+      <option value="3">Jetski</option>
+      <option value="3">Surfing</option>
+      <option value="3">Snorkeling</option>
+    </select>
+  </div>
+
+  <div class="col-lg-12">
+    <div class="form-check">
+      <input class="form-check-input border-1 border-primary-subtle" type="checkbox" id="inlineFormCheck">
+      <label class="form-check-label" for="inlineFormCheck">
+        Remember me
+      </label>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <button type="button" class="btn border-1 border-primary-subtle">
+    Submit
+    </button>
+  </div>
+
+  <div class=" col-lg-12  mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">comment</label>
+    <textarea class="form-control border-1 border-primary-subtle" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+<hr>
+
+<!-- start-section4 ---------------------------------------------------------------------------------->
+      <div class="img1 mt-4"></div>
+      <div class="modal-title1 text-center p-3 shadow-lg text-uppercase rounded">
+        <span class="title">most popular activities</span>
+      </div>
+    
+    
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 g-5 my-3 justify-content-around justify-content-center">
+      
+          <div class="col">
+            <div class="card shadow-lg">
+              <img src="images/Two Tank Scuba Dive in St Thomas.jpeg" class="card-img-top shadow px-2" alt="sea Diving" height="350">
+              <div class="card-body">  
+              <span class="card-title fs-4">sea Diving</span>
+              <a href="#" class="knowmore border-1 bg-primary-subtle p-2 text-decoration-none rounded">know more</a>
+              <p class="card-text1">Dahab , South Sinai</p>
+              </div>
+            </div>
+          </div>
+
+      <div class="col">
+        <div class="card shadow-lg">
+          <img src="images/cc.jpg" class="card-img-top px-2 shadow" alt="Kayaking" height="350">
+          <div class="card-body">
+          <span class="card-title fs-4">Kayaking</span>
+          <a href="#" class="knowmore border border-1 bg-primary-subtle p-2 text-decoration-none rounded">know more</a>
+          <p class="card-text1">cairo on The Nile River</p>
+          </div>
+        </div>
+      </div>
+    
+
+  <div class="col">
+    <div class="card shadow-lg">
+      <img src="images/pexels-guduru-ajay-bhargav-863988.jpg" class="card-img-top px-2 shadow" alt="swimming" height="350">
+      <div class="card-body">
+      <span class="card-title fs-4">swimming</span>
+      <a href="#" class="knowmore border border-1 bg-primary-subtle p-2 text-decoration-none rounded">know more</a>
+      <p class="card-text1">cairo academy</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- </div> -->
+
+  <div class="col">
+    <div class="card shadow-lg">
+      <img src="images/145.jpg" class="card-img-top px-2 shadow" alt="sailing" height="350">
+      <div class="card-body">
+      <span class="card-title fs-4">sailing</span>
+      <a href="#" class="knowmore border border-1 bg-primary-subtle p-2 text-decoration-none rounded">know more</a>
+      <p class="card-text1">Hurghada Fishing Day Trip</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card shadow-lg">
+      <img src="images/Jet ski at burj al arab.jpeg" class="card-img-top px-2 shadow" alt="jetski" height="350">
+      <div class="card-body">
+      <span class="card-title fs-4">jetski</span>
+      <a href="#" class="knowmore border border-1 bg-primary-subtle p-2 text-decoration-none rounded">know more</a>
+      <p class="card-text1">burj al arab ,Dubai</p>
+      </div>
+    </div>
+  </div>
+        
+  <div class="col">
+    <div class="card shadow-lg">
+      <img src="images/Cruises to Cozumel, Mexico _ Royal Caribbean Cruises (1).jpeg" class="card-img-top px-2 shadow" alt="Flyboarding" height="350">
+      <div class="card-body">
+      <span class="card-title fs-4">Flyboarding</span>
+      <a href="#" class="knowmore border border-1 bg-primary-subtle p-2 text-decoration-none rounded">know more</a>
+      <p class="card-text1">Dubai</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="col mb-5">
+  <div class="card shadow-lg">
+    <img src="images/5 Conseils pour Pratiquer le Snorkeling en toute Sécurité _ Snorkeling Report.jpeg" class="card-img-top px-2 shadow" alt="Snorkeling" height="350">
+    <div class="card-body">
+    <span class="card-title fs-4">Snorkeling</span>
+    <a href="#" class="knowmore border border-1 bg-primary-subtle p-2 text-decoration-none rounded">know more</a>
+    <p class="card-text1">Ras Mohamed ,sharm</p>
+    </div>
+  </div>
+</div>
+
+<div class="col mb-5">
+  <div class="card shadow-lg">
+    <img src="images/caption.jpg" class="card-img-top px-2 shadow" alt="swimming" height="350">
+    <div class="card-body">
+    <span class="card-title fs-4">swimming</span>
+    <a href="#" class="knowmore border border-1 bg-primary-subtle p-2 text-decoration-none rounded">know more</a>
+    <p class="card-text1">cairo kids academy</p>
+    </div>
+  </div>
+</div>
+
+</div><!-- /row -->
+</div><!-- /container-fluid -->
+
+<!-- start-section 5 ---------------------------------------------------------------------------------->
+<div class="img2"></div>
+<hr>
+<div class="modal-title1 text-center p-3 shadow-lg my-3 border border-1 border-primary-subtle rounded">
+   <span class="title"> thanks for</span>
+</div>
+
+<div class="container">
+
+    <div class="d-flex flex-lg-row flex-column mb-1 justify-content-lg-center align-items-center justify-content-lg-evenly mt-4 mb-5">
+
+    <div class="p-2">
+      <div class="team-img">
+        <img src="images/Best Professional Headshots in Orange County - Irvine, CA — ZIBA PHOTO VIDEO.jpeg" class="rounded rounded-4" alt="..." style="width: 330px; height: 450px;" >
+        <div class="overlay text-white p-4 rounded rounded-4" style="width: 330px; height: 450px;">
+        <div class="team-content">
+          <h4>all thanks and appreciation</h4>
+          <p><i class="far fa-clock"></i> october 20 ,2023</p>
+        </div>
+          <img class="img-thumbnail rounded-circle rounded-circle-6  z-2 position-absolute bottom-0 start-0 mx-4 my-5" src="images/Best Professional Headshots in Orange County - Irvine, CA — ZIBA PHOTO VIDEO.jpeg" alt="coach" height="280" width="100">
+          <span class="position-absolute bottom-0 start-0 px-4">Coach /abeer ahmed<br>CEO</span> 
+        </div><!-- /overlay -->
+      </div>
+    </div><!-- /col -->
+
+<div class="p-2">
+  <div class="team-img">
+    <img src="images/Best Professional Headshots in Orange County - Irvine, CA — ZIBA PHOTO VIDEO.jpeg" class="rounded rounded-4" alt="..." style="width: 330px; height: 450px;">
+    <div class="overlay text-white p-4 rounded rounded-4" style="width: 330px; height: 450px;">
+      <div class="team-content">
+        <h4>all thanks and appreciation</h4>
+        <p><i class="far fa-clock"></i> october 20 ,2023</p>
+      </div>
+      <img class="img-thumbnail rounded-circle rounded-circle-6  z-2 position-absolute bottom-0 start-0 mx-4 my-5" src="images/Best Professional Headshots in Orange County - Irvine, CA — ZIBA PHOTO VIDEO.jpeg" alt="coach" height="280" width="100">
+      <span class="position-absolute bottom-0 start-0 px-4">Coach/mona Mohamed <br>Coach</span> 
+    </div><!-- /overlay -->
+  </div>
+</div>
+
+<div class="p-2">
+  <div class="team-img">
+    <img src="images/Best Professional Headshots in Orange County - Irvine, CA — ZIBA PHOTO VIDEO.jpeg" class="rounded rounded-4" alt="coach" style="width: 330px; height: 450px;">
+    <div class="overlay text-white p-4 rounded rounded-4"  style="width: 330px; height: 450px;">
+      <div class="team-content">
+        <h4>all thanks and appreciation</h4>
+        <p><i class="far fa-clock"></i> october 20 ,2023</p>
+      </div>
+      <img class="img-thumbnail rounded-circle z-2 position-absolute bottom-0 start-0 mx-4 my-5" src="images/Best Professional Headshots in Orange County - Irvine, CA — ZIBA PHOTO VIDEO.jpeg" alt="coach" height="280" width="100">
+      <span class="position-absolute bottom-0 start-0 px-4">Coach/ghada Mohamed <br> Swimming Coach</span> 
+    </div><!-- /overlay -->
+  </div>
+</div>
+
+</div><!-- /row -->
+</div><!-- /contanier-fluid -->
+<hr>
+<!-- start-section6 podcast ---------------------------------------------------------------------------------->
+<div class=" text-center p-3 my-3">
+  <span class="title">podcasts</span>
+</div>
+
+<div class="container overflow-hidden">
+
+  <div class="card1 mb-4 rounded" style="max-width: 1300px;">
+    <div class="row g-0 justify-content-center">
+      <div class="col-lg-4">
+        <img src="images/sailing-yacht-vacation-vnxi6cw7xmdtc332.jpg" class="img-fluid rounded-start" alt="..." style="height: 400px; clip-path: polygon(0 0, 85% 0, 75% 100%, 0% 100%);">
+      </div>
+      <div class="col-lg-8" style="background-image: linear-gradient(to left , rgba(253, 253, 98, 0.1),rgba(253, 253, 98,0.1),rgba(255,255,255,0.2),rgba(255,255,255,0.1));">
+        <div class="card-body p-4">
+          <h3 class="card-title lh-md">podcast title</h3>
+            <p class="card-text"><i class="fas fa-calendar-alt"></i> mon,october 25th 2022</p>
+            <p class=" card-text5 bg-warning rounded " style="height: 4px; width: 60px;"></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque facilis incidunt temporibus, 
+              cum ad nam distinctio asperiores ipsa reprehenderit quia officiis amet vero natus eligendi pariatur numquam! Ipsum, deserunt!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <span class="card-text4">
+            <a href="#" class="btn bg-dark-subtle"><i class="fas fa-tag"></i> podcast</a>
+            <a href="#" class="btn bg-dark-subtle"><i class="fas fa-clock"></i> 55 mins.</a>
+            <a href="#" class="btn bg-dark-subtle text-info-emphasis ii"><i class="fas fa-play"></i> play episode</a>
+            </span>
+        </div>  
+      </div>
+      </div>
+  </div><!-- /card1 -->   
+
+
+<div class="card1 mb-4 rounded" style="max-width: 1300px;">
+  <div class="row g-0 justify-content-center">
+    <div class="col-lg-8" style="background-image: linear-gradient(to right , rgba(248, 190, 190, 0.2),rgba(248, 190, 190, 0.1),rgba(255,255,255,0.2),rgba(255,255,255,0.1));">
+          <div class="card-body p-4">
+            <h3 class="card-title">podcast title</h3>
+            <p class="card-text"><i class="fas fa-calendar-alt"></i> mon,october 25th 2022</p>
+            <p class=" card-text5 bg-danger rounded" style="height: 4px; width: 60px;"></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque facilis incidunt temporibus, 
+              cum ad nam distinctio asperiores ipsa reprehenderit quia officiis amet vero natus eligendi pariatur numquam!
+             Ipsum, deserunt!Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <span class="card-text4">
+            <a href="#" class="btn bg-dark-subtle"><i class="fas fa-tag"></i> podcast</a>
+            <a href="#" class="btn bg-dark-subtle"><i class="fas fa-clock"></i> 55 mins.</a>
+            <a href="#" class="btn bg-dark-subtle text-info-emphasis ii"><i class="fas fa-play"></i> play episode</a>
+            </span>
+          </div>
+    </div>
+        <div class="col-lg-4">
+          <img src="images/wallpaperflare.com_wallpaper (7).jpg" class="img-fluid rounded-end" alt="..." style="height: 400px; clip-path: polygon(15% 0, 100% 0, 100% 100%, 25% 100%);">
+        </div>
+  </div>
+</div>   
+
+    <div class="card1 mb-4 rounded" style="max-width: 1300px;">
+      <div class="row g-0 justify-content-center">
+        <div class="col-lg-4">
+          <img src="images/wallpaperflare.com_wallpaper (12).jpg" class="img-fluid rounded-start" alt="..." style="height: 400px; clip-path: polygon(0 0, 85% 0, 75% 100%, 0 100%);">
+        </div>
+        <div class="col-lg-8" style="background-image: linear-gradient(to left , rgba(198, 223, 252, 0.2),rgba(198, 223, 252, 0.1),rgba(255,255,255,0.2),rgba(255,255,255,0.1));">
+          <div class="card-body p-4">
+            <h3 class="card-title">podcast title</h3>
+            <p class="card-text"><i class="fas fa-calendar-alt"></i> mon,october 25th 2022</p>
+            <p class=" card-text5 bg-primary rounded " style="height: 4px; width: 60px;"></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque facilis incidunt temporibus, 
+              cum ad nam distinctio asperiores ipsa reprehenderit quia officiis amet vero natus eligendi pariatur numquam! 
+              Ipsum, deserunt!Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <span class="card-text4">
+            <a href="#" class="btn bg-dark-subtle"><i class="fas fa-tag"></i> podcast</a>
+            <a href="#" class="btn bg-dark-subtle"><i class="fas fa-clock"></i> 55 mins.</a>
+            <a href="#" class="btn bg-dark-subtle text-info-emphasis ii"><i class="fas fa-play"></i> play episode</a>
+            </span>
+          </div>  
+        </div>
+      </div>
+    </div><!-- /card1 -->
+
+    <div class="card1 mb-4 rounded" style="max-width: 1300px;">
+      <div class="row g-0 justify-content-center">
+        <div class="col-lg-8" style="background-image: linear-gradient(to right , rgba(199, 250, 218, 0.2),rgba(199, 250, 218,0.1),rgba(255,255,255,0.2),rgba(255,255,255,0.1));">
+          <div class="card-body p-4">
+            <h3 class="card-title">podcast title</h3>
+            <p class="card-text"><i class="fas fa-calendar-alt"></i> mon,october 25th 2022</p>
+            <p class=" card-text5 bg-success rounded " style="height: 4px; width: 60px;"></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque facilis incidunt temporibus, 
+              cum ad nam distinctio asperiores ipsa reprehenderit quia officiis amet vero natus eligendi pariatur numquam!
+               Ipsum, deserunt!Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <span class="card-text4 ">
+            <a href="#" class="btn bg-dark-subtle"><i class="fas fa-tag"></i> podcast</a>
+            <a href="#" class="btn bg-dark-subtle"><i class="fas fa-clock"></i> 55 mins.</a>
+            <a href="#" class="btn bg-dark-subtle text-info-emphasis ii"><i class="fas fa-play"></i> play episode</a>
+            </span> 
+        </div>
+        </div>
+        <div class="col-lg-4">
+          <img src="images/05.jpg" class="img-fluid rounded-end" alt="..." style="height: 400px; clip-path: polygon(15% 0, 100% 0, 100% 100%, 25% 100%);">
+        </div>
+      </div>
+    </div><!-- /card1 -->
+
+</div><!-- /container -->
+<!-- section 7 join us ////////////////////////////////////////////////////////////////////// -->
+<div class="text-center p-3 my-3">
+  <span class="title">join us</span>
+</div>
+
+<div class="container">
+  <div class="d-flex flex-lg-row flex-column justify-content-lg-center  justify-content-lg-around align-items-center ">
+
+    <div class="p-2" style="height: 380px; width: 260px;">
+      <div class="card3">
+        <div class="card3-body text-center">
+        <span class="card-title d-block fs-4 lh-lg">subscribe now</span>
+        <a class="card-link bg-black text-primary py-2 px-3 rounded rounded-4" href="#"><i class="fab fa-twitter"></i></a>
+        <p class="card-text fs-4">go to link</p>
+        </div>
+      </div>
+    </div>
+
+<div class="p-2" style="height: 380px; width: 260px;">
+  <div class="card3">
+    <div class="card3-body text-center">
+    <span class="card-title d-block fs-4 lh-lg">contact us</span>
+    <a class="card-link bg-black text-success py-2 px-3 rounded rounded-4" href="#"><i class="fab fa-whatsapp"></i></a>
+    <p class="card-text fs-4">go to link</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="p-2" style="height: 380px; width: 260px;">
+  <div class="card3">
+    <div class="card3-body text-center">
+    <span class="card-title d-block fs-4 lh-lg">follow</span>
+    <a class="card-link bg-black text-primary py-2 px-3 rounded rounded-4" href="#"><i class="fab fa-linkedin-in"></i></a>
+    <p class="card-text fs-4">go to link</p>
+    </div>
+  </div>
+</div>
+
+<div class="p-2" style="height: 380px; width: 260px;">
+    <div class="card3">
+      <div class="card3-body text-center">
+      <span class="card-title d-block fs-4 lh-lg">follow</span>
+      <a class="card-link bg-black text-danger py-2 px-3 rounded rounded-4" href="#"><i class="fab fa-instagram"></i></a>
+      <p class="card-text fs-4">go to link</p>
+    </div>
+  </div>
+</div>
+
+  </div><!-- /row -->
+</div><!-- /container -->
+<!-- footer section /////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="container-fluid">
+<div class="row row-cols-1 row-cols-lg-3 bg-primary-subtle bg-opacity-10">
+
+ <div class="col-12 col-lg-4 mt-3">
+    <div class="p-3 border border-info border-start-0 border-end-0 text-center">
+      <a href="#"><img class="rounded-circle" src="images/logo.png" alt="" height="80" width="80"></a>
+      <a class="fs-4 mx-3 text-decoration-none" href="#">watersports</a>
+    </div>
+      <p class="text-center lh-lg mt-3"> tel: 000-000-000 <br>Address : EGYPT <br> Fax : 000-000-000</p>
+  </div>
+
+    <div class="col-12 col-lg-4 mt-3">
+      <div class="p-3 border border-info border-start-0 border-end-0 text-center">
+        <a href="#"><img class="rounded-circle" src="images/logo.png" alt="" height="80" width="80"></a>
+        <a class="fs-4 mx-3 text-decoration-none" href="#">important links </a>
+        </div>
+        <ul class="list-unstyled text-center lh-lg mt-3">
+          <li><a class="text-decoration-none" href="#">Visit Us</a></li>
+          <li><a class="text-decoration-none" href="#">Take alook</a></li>
+          <li><a class="text-decoration-none" href="#">Your health is more important</a></li>
+        </ul>
+    </div>
+
+    <div class="col-12 col-lg-4 mt-3">
+        <div class="p-3 border border-info border-start-0 border-end-0 text-center">
+          <a href="#"><img class="rounded-circle" src="images/logo.png" alt="" height="80" width="80"></a>
+          <a class="fs-4 text-center text-decoration-none" href="#">vision </a>
+        </div>
+          <p class="text-center lh-lg mt-3 ">Serveices for all<br>Provide best serveices<br> you will be better than before</p>
+    </div>
+
+    <div class="col-12 col-lg-12">
+        <hr class="border border-info mt-5">
+        <p class="title text-center fs-4 lh-lg">COPYRIGHT &copy;2023 mennaallah gamal, GOOD COMPANY. ALL RIGHTS</p>
+        <hr class="border border-info">
+    </div>
+      <div style="height: 100px;"></div>
+
+</div><!-- /row -->
+</div><!-- /container-fluid -->
+     
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

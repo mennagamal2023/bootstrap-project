@@ -1,0 +1,227 @@
+body{
+    background-color:whitesmoke;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* common style /////////////////////////////////////////////////////////////////////////////// */
+.btn{
+    color:black;
+    background-color: hsl(207, 100%, 61%);  
+}
+.modal-title{
+    background-color: rgb(56, 165, 255);
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+.modal-title1{
+    background-image: linear-gradient(to bottom right , hsl(207, 100%, 61%),white);
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.title{
+    background-image:linear-gradient( rgb(56, 165, 255),orange ,rgb(56, 165, 255),orange);
+    -webkit-background-clip:text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 40px;
+}
+/* section1 ////////////////////////////////////////////////////////////////////////////////// */
+.navbar-brand2{
+    background-image:linear-gradient( rgb(56, 165, 255),orange ,rgb(56, 165, 255),orange);
+    -webkit-background-clip:text;
+    color: transparent;
+}
+.navbar{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 70px;
+}
+.navbar-nav .nav-item .nav-link{
+    font-size: 17px;
+}
+.navbar-nav .nav-item .nav-link:hover span{
+    color: orange;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    text-shadow: 2px 2px 8px rgb(56, 165, 255);
+    font-weight: 700;
+    transform: scale(1.1,1.1);
+}
+/* section 1 ///////////////////////////////////////////////////////////////////////////// */
+.welcome{
+    background-image:linear-gradient( rgb(56, 165, 255),orange ,rgb(56, 165, 255),orange);
+    -webkit-background-clip:text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 26px;
+}
+p-welcome{
+    font-size: 20px;
+}
+.section-show{
+    margin-top: 70px;
+}
+.icons{
+    position: absolute;
+    position: fixed;
+    z-index: 5;
+    font-size: 55px;
+    top:150px;
+    left:1270px;
+}
+.icons li a i{
+    background-image:linear-gradient( to bottom right , rgb(56, 165, 255),orange);
+    -webkit-background-clip:text;
+    color: transparent;
+}
+.icons li a i:hover{
+    color:rgb(171, 206, 235);
+}
+/* section 2////////////////////////////////////////////////////////////////// */
+.accordion-button{
+    background-image:linear-gradient( rgb(56, 165, 255),orange ,rgb(56, 165, 255) ,orange);
+    -webkit-background-clip:text;
+    color: transparent;
+    font-weight: 700;
+}
+/* section 4//////////////////////////////////////////////////// */
+.activities{
+    background-image:linear-gradient( rgb(56, 165, 255),orange ,rgb(56, 165, 255),orange);
+    -webkit-background-clip:text;
+    color: transparent;
+    font-weight: 800;
+}
+.card-text1{
+    font-size: 17px;
+    line-height: 30px;
+}
+.knowmore{
+    font-size: 16px;
+    font-weight: 700;
+    color: #39A7FF;
+    position: absolute;
+    left: 220px;
+}
+.card-img-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.img1{
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/pexels-noz-urbina-11054447.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left: 0;
+    transition: 1.2s;
+}
+.card:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(171, 206, 235, 0.2);
+}
+.card::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    transition: 1.2s;
+}
+.card:hover::before{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(171, 206, 235,0.2);
+}
+/* section 5 ////////////////////////////////////////////////////////////////////////// */
+.img2{
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(9\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.team-img{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient( rgba(128,128,128,0.9), rgba(128,128,128,0));
+}
+.team-content{
+    transition: 0.3s;
+}
+.overlay{
+    transition: 0.3s;
+}
+.team-img{
+    transition: 0.3s;
+}
+.team-img:hover{
+    transform: scale(0.87,0.87);
+}
+.overlay:hover{
+    background-image: linear-gradient( to bottom , rgba(2, 61, 109, 0.7), rgba(128,128,128,0)); 
+}
+.overlay:hover .team-content{
+    transform: translateY(25%);
+}
+/*section6 //////////////////////////////////////////////////////////////////////////////////////////////////// */
+.card1{
+    position: relative;
+    box-shadow: 0 4px 15px 0 rgba(165, 171, 177, 0.2), 0 6px 20px 0 rgba(165, 171, 177, 0.2),0 -4px 15px 0 rgba(165, 171, 177, 0.2), 0 -6px 20px 0 rgba(165, 171, 177, 0.2);
+    transition: 1s;
+}
+.card1:hover .card-text5{
+    transform: scaleX(1.5);
+}
+.card-text4{
+    position: absolute;
+    margin-top: 75px;
+}
+
+/* section 7/////////////////////////////////////////////////////////////////////////////////////// */
+
+.card3{
+    box-shadow: 0 4px 15px 0 rgba(56, 165, 255, 0.2), 0 6px 20px 0 rgba(56, 165, 255, 0.2),0 -4px 15px 0 rgba(56, 165, 255, 0.2), 0 -6px 20px 0 rgba(56,165, 255, 0.2);
+    border-radius: 10px;
+}
+.card3 .card-title{
+    color:rgb(56, 165, 255);
+    color:blue;
+}
+.card3 .card-link{
+    font-size: 70px;
+    transition: 0.5s;
+}
+.card3 .card-link:hover{
+    opacity: 0.7;
+}
+.card3 .card-text{
+    color:#39A7FF;
+    transition: 0.5s;
+}
+.card3  .card-text:hover{
+    color:#87C4FF;
+}
+
